@@ -1,4 +1,4 @@
-{% extends 'layout.html' %}
+{% extends 'layout.njk' %}
 
 {% block content%}
 
@@ -14,84 +14,24 @@
     </div>
 
     <section class="cards">
+
+        {% for curse in curses %}
         
-        <div class="card" id="iESvzNruUNs">
+        <div class="card" id=" {{curse.id}} ">
             <div class="card__image-container">
-                <img src="/htmlcss.jpg" alt="Html e Css">
+                <img src= "{{curse.image}}" alt=" imagem de {{curse.title}} ">
             </div>
             <div class="card__content">
-                <p>HTML5 e CSS3</p>
+                <p>{{curse.title}}</p>
             </div>
             <div class="card__info">
-                <p>Projetos:</p>
-                <p class="card__price"><a href="https://github.com/renatormsilva" target="_blank">GitHub</a></p>
+                <p>{{curse.subtitle}}</p>
+                <p class="card__price"><a href="{{social}}" target="_blank">{{curse.link}}</a></p>
             </div>
         </div>
+        {% endfor %}
+        
 
-        <div class="card" id="QSW1374FCt4">
-            <div class="card__image-container">
-                <img src="/JavaScript3.jpg" alt="Javascript" class="redimensionar">
-            </div>
-            <div class="card__content">
-                <p>JAVASCRIPT</p>
-            </div>
-            <div class="card__info">
-                <p>Projetos:</p>
-                <p class="card__price"><a href="https://github.com/renatormsilva" target="_blank">GitHub</a></p>
-            </div>
-        </div>
-
-        <div class="card" id="aTf8QTjw4RE">
-            <div class="card__image-container">
-                <img src="/ts.jpg" alt="TypeScript" class="redimensionar">
-            </div>
-            <div class="card__content">
-                <p>TYPE SCRIPT</p>
-            </div>
-            <div class="card__info">
-                <p>Projetos:</p>
-                <p class="card__price"><a href="https://github.com/renatormsilva" target="_blank">GitHub</a></p>
-            </div>
-        </div>
-
-        <div class="card" id="ye0XSzbU2so">
-            <div class="card__image-container">
-                <img src="react.png" alt="react">
-            </div>
-            <div class="card__content">
-                <p>REACT JS</p>
-            </div>
-            <div class="card__info">
-                <p>Projetos:</p>
-                <p class="card__price"><a href="https://github.com/renatormsilva" target="_blank">GitHub</a></p>
-            </div>
-        </div>
-
-        <div class="card" id="hAAj27hgPFg">
-            <div class="card__image-container">
-                <img src="/nodejs.jpg" alt="node" class="redimensionar">
-            </div>
-            <div class="card__content">
-                <p>NODE JS</p>
-            </div>
-            <div class="card__info">
-                <p>Projetos:</p>
-                <p class="card__price"><a href="https://github.com/renatormsilva" target="_blank">GitHub</a></p>
-            </div>
-        </div>
-
-        <div class="card" id="DDm0M_rZLJo">
-            <div class="card__image-container">
-                <img src="reactnative.png" alt="reactnative" class="redimensionar">
-            </div>
-            <div class="card__content">
-                <p>REACT NATIVE</p>
-            </div>
-            <div class="card__info">
-                <p>Projetos:</p>
-                <p class="card__price"><a href="https://github.com/renatormsilva" target="_blank">GitHub</a></p>
-            </div>
-        </div>
     </section>
     <div class="modal-overlay">
         <div class="modal">
@@ -100,10 +40,13 @@
             </a>
 
             <div class="modal-content">
-                <iframe src="" frameborder="0"></iframe>
+                <iframe src= "https://www.youtube.com/embed/{{curse.id}} " frameborder="0"></iframe>
             </div>
+
         </div>
     </div>
+
+    
 
     <script src="script.js"></script>
 
