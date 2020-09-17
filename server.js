@@ -11,6 +11,8 @@ server.set("view engine", "njk")
 
 nunjucks.configure("views", {
     express: server,
+    autoescape: false,
+    noCache: true
     
 });
 
@@ -36,6 +38,21 @@ server.get("/portifolio", function(req, res){
         social: social
     });
 });
+
+server.get("/video", function(req, res) {
+    const id = req.query.id
+
+    const video = curses.find(function(video){
+        return video.id == id
+    })
+
+    if(!video) {
+        return res.send("Video not found");
+    }
+
+
+    return res.render("video", {curse: video})
+})
 
 
 server.listen(5000, function(){

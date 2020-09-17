@@ -5,24 +5,18 @@
 {% block head %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title> Portifólio - Renato Rodrigues</title>
+    <title> {{curse.title}}</title>
 {% endblock %}
 
-    <div id="wrapper">
-        <h1>Portifólio e tecnologias</h1>
+    <div id="wrapper" class="video">
+        <h1>{{curse.title}}</h1>
     </div>
 
-    <section class="cards">
-
-        {% for curse in curses %}
+    <section class="video">
         
         <div class="card" id=" {{curse.id}} ">
-            <div class="card__image-container {{ 'featured-wrapper' if curse.featured }} ">
-                <img src= "{{curse.image}}" alt=" imagem de {{curse.title}} ">
-                {% if curse.featured %}
-                    <div class="featured">Featured</div>
-                {% endif%}
+            <div class="card__video-container">
+                <iframe src="https://www.youtube.com/embed/{{curse.id}}" frameborder="0"></iframe>
             </div>
             <div class="card__content">
                 <p>{{curse.title}}</p>
@@ -32,13 +26,10 @@
                 <p class="card__price"><a href="{{social}}" target="_blank">{{curse.link}}</a></p>
             </div>
         </div>
-        {% endfor %}
         
 
     </section>
-
     
 
-    <script src="script.js"></script>
 
     {% endblock %}
