@@ -32,6 +32,7 @@ header {
 #wrapper {
     text-align: center;
     padding: 32px;
+    color: orange;
 }
 
 #wrapper img {
@@ -100,8 +101,9 @@ header {
 
 .card__content,
 .card__info {
-    padding: 24px;
+    padding: 20px;
     text-align:center;
+    
 }
 
 .card__info {

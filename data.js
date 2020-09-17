@@ -4,6 +4,7 @@ module.exports = [
         title: "HTML E CSS",
         image: "htmlcss.jpg",
         subtitle: "Projetos:",
+        description: "Alguns projetos utilizando HTML e CSS:",
         link: "Github",
         featured: true,
     },
@@ -12,6 +13,7 @@ module.exports = [
         title: "JAVASCRIPT",
         image: "/JavaScript3.jpg",
         subtitle: "Projetos:",
+        description: "Alguns projetos utilizando JavaScript:",
         link: "Github",
         featured: true
     },
@@ -20,6 +22,7 @@ module.exports = [
         title: "TYPE SCRIPT",
         image: "/ts.jpg",
         subtitle: "Projetos:",
+        description: "Alguns projetos utilizando Type Script:",
         link: "Github",
         
     },
@@ -28,6 +31,7 @@ module.exports = [
         title: "REACT JS",
         image: "/react.png",
         subtitle: "Projetos:",
+        description: "Alguns projetos utilizando React Js:",
         link: "Github",
     },
     {
@@ -35,6 +39,7 @@ module.exports = [
         title: "NODE JS",
         image: "nodejs.jpg",
         subtitle: "Projetos:",
+        description: "Alguns projetos utilizando NodeJs:",
         link: "Github",
         featured: true,
     },
@@ -43,6 +48,7 @@ module.exports = [
         title: "REACT NATIVE",
         image: "reactnative.png",
         subtitle: "Projetos:",
+        description: "Alguns projetos utilizando React Native:",
         link: "Github"
     }
     
