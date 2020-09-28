@@ -7,7 +7,6 @@
 | [Html](https://tableless.com.br/o-que-html-basico/)
 | [CSS](https://www.w3schools.com/css/)
 | [Nodemon](https://nodemon.io/)
-| [PostgreSQL](https://www.postgresql.org/)
 | [Nunjucks](https://mozilla.github.io/nunjucks/)
 
 ## Desenvolvimento
