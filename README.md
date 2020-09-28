@@ -21,3 +21,11 @@ npm start
 ```
 
 Depois é só olocar no seu navegador: https://localhost:5000
+
+## 1° tela
+
+<img src="/readpics/about.jpg" alt="firstscreen" width="600px"/>
+
+## 2° tela
+
+<img src="/readpics/content.png" alt="secondscreen" width="600px"/>
